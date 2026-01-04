@@ -36,7 +36,7 @@ export default function InterestForm() {
   }
 
   return (
-    <section className="section">
+    <section className="section" id="interest">
       <div className="max-w-xl mx-auto">
         <h2 className="heading-lg">Express Interest</h2>
         <p className="body-text mt-2">
