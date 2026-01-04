@@ -1,14 +1,8 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 import { sendAdminNotification, sendInterestMail } from "@/lib/mailer";
-import { createClient } from "@supabase/supabase-js/dist/index.cjs";
 
 export async function POST(req: Request) {
-  const supabase = createClient(
-    process.env.SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!
-  );
-
   try {
     const text = await req.text();
     console.log("RAW BODY:", text);
