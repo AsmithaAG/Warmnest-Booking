@@ -1,0 +1,112 @@
+/* ============================= */
+/* Design System – Core Tokens   */
+/* ============================= */
+
+:root {
+  /* Colors */
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --text-primary: #0a0a0a;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+
+  /* Radius */
+  --radius-sm: 0.75rem;   /* inputs */
+  --radius-md: 1.25rem;   /* cards */
+  --radius-lg: 2rem;      /* sections */
+  --radius-full: 9999px;  /* buttons */
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* Motion */
+  --transition-fast: 150ms ease-out;
+}
+
+/* ============================= */
+/* Typography                    */
+/* ============================= */
+
+.heading-xl {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.heading-lg {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.body-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* ============================= */
+/* Buttons                       */
+/* ============================= */
+
+.btn-primary {
+  background: var(--text-primary);
+  color: white;
+  border-radius: var(--radius-full);
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: transform var(--transition-fast),
+              opacity var(--transition-fast);
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ============================= */
+/* Inputs                        */
+/* ============================= */
+
+.input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px black;
+}
+
+/* ============================= */
+/* Cards & Sections              */
+/* ============================= */
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  border: 1px solid var(--border);
+}
+
+.section {
+  padding: 3.5rem 1.5rem;
+  background: var(--bg);
+}
+.section-compact {
+  padding: 2.5rem 1.5rem;
+}
+
